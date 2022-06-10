@@ -7,47 +7,50 @@ var personInfoTemplate = personInfoTemplateElement.innerHTML;
 var inputValue = "";
 
 data = [
-{
-  first_name: "Albert",
-  middle_name: "O",
-  last_name: "Smith",
-  full_name: "Albert",
-  email: "Albert.b@@example.com",
-  phone: "123-456-1002",
-  date_of_birth: "01/01/1980",
-  street: "123 Main st",
-  city: "Langley",
-  state: "Virginia",
-  postal_code: "22101",
-  mobile_phone: "123-456-1001" },
+  {
+    first_name: "Albert",
+    middle_name: "O",
+    last_name: "Smith",
+    full_name: "Albert",
+    email: "Albert.b@@example.com",
+    phone: "123-456-1002",
+    date_of_birth: "01/01/1980",
+    street: "123 Main st",
+    city: "Langley",
+    state: "Virginia",
+    postal_code: "22101",
+    mobile_phone: "123-456-1001"
+  },
 
-{
-  first_name: "David",
-  middle_name: "O",
-  last_name: "Doe",
-  full_name: "David",
-  email: "david.b@@example.com",
-  phone: "123-456-1002",
-  date_of_birth: "01/01/1980",
-  street: "123 Main st",
-  city: "Langley",
-  state: "Virginia",
-  postal_code: "22101",
-  mobile_phone: "123-456-1001" },
+  {
+    first_name: "David",
+    middle_name: "O",
+    last_name: "Doe",
+    full_name: "David",
+    email: "david.b@@example.com",
+    phone: "123-456-1002",
+    date_of_birth: "01/01/1980",
+    street: "123 Main st",
+    city: "Langley",
+    state: "Virginia",
+    postal_code: "22101",
+    mobile_phone: "123-456-1001"
+  },
 
-{
-  first_name: "Marc",
-  middle_name: "O",
-  last_name: "Johnson",
-  full_name: "Marc",
-  email: "marc.m@example.com",
-  phone: "123-456-1002",
-  date_of_birth: "01/01/1980",
-  street: "123 Main st",
-  city: "Langley",
-  state: "Virginia",
-  postal_code: "22101",
-  mobile_phone: "123-456-1001" }];
+  {
+    first_name: "Marc",
+    middle_name: "O",
+    last_name: "Johnson",
+    full_name: "Marc",
+    email: "marc.m@example.com",
+    phone: "123-456-1002",
+    date_of_birth: "01/01/1980",
+    street: "123 Main st",
+    city: "Langley",
+    state: "Virginia",
+    postal_code: "22101",
+    mobile_phone: "123-456-1001"
+  }];
 
 
 
@@ -62,7 +65,7 @@ searchInputElement.addEventListener("input", function (e) {
   inputValue = e.target.value.toLowerCase();
   console.log("searching for: " + inputValue);
   // clear the result
-  while (resultsElement.hasChildNodes()) {if (window.CP.shouldStopExecution(0)) break;
+  while (resultsElement.hasChildNodes()) {
     resultsElement.removeChild(resultsElement.firstChild);
   }
 
@@ -118,7 +121,7 @@ function populateResult(result) {
   result.forEach(function (person) {
     liElement = document.createElement("li");
     textNode = document.createTextNode(
-    person.name + "(age:" + person.age + ")");
+      person.name + "(age:" + person.age + ")");
 
     liElement.appendChild(textNode);
     // frag.appendChild(liElement);
