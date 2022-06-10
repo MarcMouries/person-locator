@@ -64,7 +64,7 @@ searchInputElement.addEventListener("input", function (e) {
   // clear the result
   while (resultsElement.hasChildNodes()) {if (window.CP.shouldStopExecution(0)) break;
     resultsElement.removeChild(resultsElement.firstChild);
-  }window.CP.exitedLoop(0);
+  }
 
   filteredData = data.filter(function (person) {
     return person.full_name.toLowerCase().includes(inputValue);
