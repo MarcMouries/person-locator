@@ -1,23 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link type="text/css" href="./styles.css" media="all" rel="stylesheet">
 
-<title>Person Locator</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link type="text/css" href="./styles.css" media="all" rel="stylesheet">
+
+  <title>Person Locator</title>
 
 
-    <link type="text/css" href="/css/pages.css" media="all" rel="stylesheet">
+  <link type="text/css" href="/css/pages.css" media="all" rel="stylesheet">
 </head>
-<body translate="no" >
-    <div class="page-container">
+
+<body translate="no">
+  <div class="page-container">
     <div class="container">
       <div class="content-container">
         <div class="form-header">
         </div> <!-- form  header -->
-  
+
         <div class="form-container">
           <h1>Person locator</h1>
           <div class="form-content">
@@ -25,74 +26,78 @@
             <p>Ex. Search for Alex or Marc.</p>
           </div>
           <div>
-            <input id="searchInput" type="text" placeholder="Type a name" autocomplete="off"/>
-  
+            <input id="searchInput" type="text" placeholder="Type a name" autocomplete="off" />
+
             <div id="no_record_found">
               <h2>No record found</h2>
             </div>
-            
+
             <div id="searchResults"></div>
-            
+
             <div id="person_info_template" class="form-fields">
-              <section class="review" id="one">
-                <header class="review-title m_header">
-                  <div class="review-row-left">Personal information</div>
-                  <div class="review-row-right">
+              <section class="information" id="one">
+                <header class="information-title m_header">
+                  <div class="information-row-left">Personal information</div>
+                  <div class="information-row-right">
                   </div>
                 </header>
-                <ul class="review-list">
-                  <li class="review-row">
-                    <div class="review-row-left">First Name</div>
-                    <div class="review-row-right" id="first_name">{first_name}</div>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left">First Name</div>
+                    <div class="information-row-right" id="first_name">{first_name}</div>
                   </li>
-                  <li class="review-row">
-                    <div class="review-row-left">Middle Name</div>
-                    <div class="review-row-right" id="middle_name">{middle_name}</div>
+                  <li class="information-row">
+                    <div class="information-row-left">Middle Name</div>
+                    <div class="information-row-right" id="middle_name">{middle_name}</div>
                   </li>
-                  <li class="review-row">
-                    <div class="review-row-left">Last Name</div>
-                    <div class="review-row-right" id="last_name">{last_name}</div>
+                  <li class="information-row">
+                    <div class="information-row-left">Last Name</div>
+                    <div class="information-row-right" id="last_name">{last_name}</div>
                   </li>
-                  <li class="review-row">
-                    <div class="review-row-left">Date of Birth</div>
-                    <div class="review-row-right" id="date_of_birth">{date_of_birth}</div>
+                  <li class="information-row">
+                    <div class="information-row-left">Date of Birth</div>
+                    <div class="information-row-right" id="date_of_birth">{date_of_birth}</div>
                   </li>
                 </ul>
               </section>
-              <section class="review" id="two">
-                <header class="review-title m_header">
-                  <div class="review-row-left" scope="row">Home address</div>
-                  <div class="review-row-right">
+              <section class="information" id="two">
+                <header class="information-title m_header">
+                  <div class="information-row-left" scope="row">Home address</div>
+                  <div class="information-row-right">
                   </div>
                 </header>
-                <ul class="review-list">
-                  <li class="review-row">
-                    <div class="review-row-left">Street</div>
-                    <div class="review-row-right" id="street">{street}</div>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left">Street</div>
+                    <div class="information-row-right" id="street">{street}</div>
                   </li>
-                  <li class="review-row">
-                    <div class="review-row-left">City</div>
-                    <div class="review-row-right" id="city">{city}</div>
+                  <li class="information-row">
+                    <div class="information-row-left">City</div>
+                    <div class="information-row-right" id="city">{city}</div>
                   </li>
-                  <li class="review-row">
-                    <div class="review-row-left">State</div>
-                    <div class="review-row-right" id="state">{state}</div>
+                  <li class="information-row">
+                    <div class="information-row-left">State</div>
+                    <div class="information-row-right" id="state">{state}</div>
                   </li>
-                  <li class="review-row">
-                    <div class="review-row-left">Zip Code</div>
-                    <div class="review-row-right" id="postal_code">{postal_code}</div>
+                  <li class="information-row">
+                    <div class="information-row-left">Zip Code</div>
+                    <div class="information-row-right" id="postal_code">{postal_code}</div>
                   </li>
                 </ul>
               </section>
-              <section class="review">
-                <header class="review-title m_header">
-                  <div class="review-row-left" scope="row">Phone number</div>
-                  <div class="review-row-right"></div>
+              <section class="information">
+                <header class="information-title m_header">
+                  <div class="information-row-left" scope="row">Phone number</div>
+                  <div class="information-row-right"></div>
                 </header>
-                <ul class="review-list">
-                  <li class="review-row">
-                    <div class="review-row-left" scope="row">Mobile Phone</div>
-                    <div class="review-row-right" id="mobile_phone">{mobile_phone}</div>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left" scope="row">Mobile Phone</div>
+                    <div class="information-row-right" id="mobile_phone">{mobile_phone}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left" scope="row">Office Phone</div>
+                    <div class="information-row-right" id="office_phone">{office_phone}</div>
                   </li>
                 </ul>
               </section>
@@ -101,8 +106,10 @@
         </div>
       </div> <!-- content container-->
     </div>
-  </div>
+
+  </div>  <!-- page container-->
+  <script src="./user_data.js"></script>
   <script src="./script.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
