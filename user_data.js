@@ -11,7 +11,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"
     },
     {
       first_name: "Barbara",
@@ -25,8 +26,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Cindy",
       middle_name: "O",
@@ -39,8 +40,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "David",
       middle_name: "O",
@@ -53,8 +54,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Diana",
       middle_name: "O",
@@ -67,8 +68,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     ,
     {
       first_name: "Edgar",
@@ -82,8 +83,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Frank",
       middle_name: "O",
@@ -96,8 +97,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Grace",
       middle_name: "O",
@@ -110,8 +111,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Henri",
       middle_name: "O",
@@ -124,8 +125,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Marc",
       middle_name: "O",
@@ -138,8 +139,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Michele",
       middle_name: "O",
@@ -152,8 +153,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    }
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    }
     ,
     {
       first_name: "Tracey",
@@ -167,8 +168,8 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    },
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    },
     {
       first_name: "Veronica",
       middle_name: "S",
@@ -181,7 +182,7 @@ user_data = [
       city: "Langley",
       state: "Virginia",
       postal_code: "22101",
-      mobile_phone: "123-456-1001"
-    }
+      mobile_phone: "123-100-1001",
+      office_phone: "123-100-1002"    }
   
   ];

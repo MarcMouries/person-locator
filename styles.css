@@ -73,16 +73,16 @@ p {
 
 }
 
-.review {
+.information {
     width: 100%;
     border: 2px solid #f5f5f5;
 }
-.review:first-of-type .review-title {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+.information:first-of-type .information-title {
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px;
 }
 
-.review-title {
+.information-title {
     background: #2e3f51;
     border: none;
     color: #fff;
@@ -96,21 +96,21 @@ p {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.review-title .review-row-left {
+.information-title .information-row-left {
     padding: 10px;
     text-align: left;
     width: 70%;
 }
 
-.review-title>div {
+.information-title>div {
     font-weight: 600;
     font-size: 15px;
 }
-ul.review-list {
+ul.information-list {
     margin: 0;
     padding: 0;
 }
-ul.review-list .review-row {
+ul.information-list .information-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row nowrap;
@@ -124,22 +124,25 @@ ul.review-list .review-row {
     line-height: 18px;
     margin-bottom: 5px;
 }
-.review-row .review-row-left {
+
+.information-row .information-row-left, .information-row .information-row-right {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.5rem;
+}
+
+.information-row .information-row-left {
     font-weight: 600;
     padding: 10px;
     text-align: right;
     width: 40%;
 }
-.review-row .review-row-right {
+.information-row .information-row-right {
     padding: 10px 10px 10px 0;
     width: 60%;
 }
-.review-row .review-row-left, .review-row .review-row-right {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-}
-ul.review-list .review-row:nth-child(even) {
+
+ul.information-list .information-row:nth-child(even) {
     background: #f2faff;
 }
 

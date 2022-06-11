@@ -6,60 +6,7 @@ var personInfoTemplate = personInfoTemplateElement.innerHTML;
 
 var inputValue = "";
 
-data = [
-  {
-    first_name: "Albert",
-    middle_name: "O",
-    last_name: "Smith",
-    full_name: "Albert",
-    email: "Albert.b@@example.com",
-    phone: "123-456-1002",
-    date_of_birth: "01/01/1980",
-    street: "123 Main st",
-    city: "Langley",
-    state: "Virginia",
-    postal_code: "22101",
-    mobile_phone: "123-456-1001"
-  },
 
-  {
-    first_name: "David",
-    middle_name: "O",
-    last_name: "Doe",
-    full_name: "David",
-    email: "david.b@@example.com",
-    phone: "123-456-1002",
-    date_of_birth: "01/01/1980",
-    street: "123 Main st",
-    city: "Langley",
-    state: "Virginia",
-    postal_code: "22101",
-    mobile_phone: "123-456-1001"
-  },
-
-  {
-    first_name: "Marc",
-    middle_name: "O",
-    last_name: "Johnson",
-    full_name: "Marc",
-    email: "marc.m@example.com",
-    phone: "123-456-1002",
-    date_of_birth: "01/01/1980",
-    street: "123 Main st",
-    city: "Langley",
-    state: "Virginia",
-    postal_code: "22101",
-    mobile_phone: "123-456-1001"
-  }];
-
-
-
-// Williams. 1,534,042.
-//Brown. 1,380,145.
-//Jones. 1,362,755.
-//Miller. 1,127,803.
-//Davis. 1,072,335.
-//Garcia. 858,289.
 
 searchInputElement.addEventListener("input", function (e) {
   inputValue = e.target.value.toLowerCase();
@@ -69,7 +16,7 @@ searchInputElement.addEventListener("input", function (e) {
     resultsElement.removeChild(resultsElement.firstChild);
   }
 
-  filteredData = data.filter(function (person) {
+  filteredData = user_data.filter(function (person) {
     return person.full_name.toLowerCase().includes(inputValue);
   });
 
