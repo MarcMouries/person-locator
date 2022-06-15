@@ -31,7 +31,7 @@ user_data = [
     {
       first_name: "Cindy",
       middle_name: "O",
-      last_name: "Smith",
+      last_name: "Barrett",
       full_name: "Cindy Barrett",
       email: "Cindy.Barrett@@example.com",
       phone: "123-456-1002",
