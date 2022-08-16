@@ -351,7 +351,7 @@ user_data = [
 	},
 
 	{
-		first_name: "Zooe",
+		first_name: "Zoe",
 		middle_name: "S",
 		last_name: "Zimmer",
 		full_name: "Zoe Zimmer",
