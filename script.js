@@ -17,7 +17,9 @@ searchInputElement.addEventListener("input", function (e) {
   }
 
   filteredData = user_data.filter(function (person) {
-    return person.full_name.toLowerCase().includes(inputValue);
+//    return person.full_name.toLowerCase().includes(inputValue);
+    return person.full_name.toLowerCase().startsWith(inputValue);
+    
   });
 
   console.log("found: " + JSON.stringify(filteredData));
