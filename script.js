@@ -1,6 +1,6 @@
 var searchInputElement = document.getElementById("searchInput");
 var resultsElement = document.getElementById("searchResults");
-var noRecordFoundElement = document.getElementById("no_record_found");
+var recordFoundElement = document.getElementById("record_found");
 var personInfoTemplateElement = document.getElementById("person_info_template");
 var personInfoTemplate = personInfoTemplateElement.innerHTML;
 
@@ -19,41 +19,45 @@ searchInputElement.addEventListener("input", function (e) {
   filteredData = user_data.filter(function (person) {
 //    return person.full_name.toLowerCase().includes(inputValue);
     return person.full_name.toLowerCase().startsWith(inputValue);
-    
   });
 
-  console.log("found: " + JSON.stringify(filteredData));
+// console.log("RESULT FOUND: " + JSON.stringify(filteredData));
+  
+  var result_count = filteredData.length;
+  console.log("RESULT(S) FOUND: " + result_count);
+
+
   if (filteredData.length == 0) {
     console.log("NO RESULT FOUND: " + filteredData);
-    noRecordFoundElement.style.display = "block";
+    recordFoundElement.style.display = "block";
     resultsElement.style.display = "none";
   } else {
-    if (inputValue == "") {
-      noRecordFoundElement.style.display = "none";
-      resultsElement.style.display = "none";
-    } else {
+    //recordFoundElement.style.display = "none";
+
       // we retrieve only the first person matching the search input
       var person = filteredData[0];
       populatePersonInfo(person);
 
       resultsElement.style.display = "block";
     }
-  }
 });
 
 /* Populate template with data by replacing strings between braces with properties in the data object
  * ex: "{first_name}" is replaced by data.first_name
+ * Returns an empty string if no value is found to match the string to be replaced
  */
 function populate(template, data) {
   var content = template.replace(/\{(\w+)\}/g, function (_, k) {
-    return data[k];
+    var value = data[k];
+    if (value) {
+       return value
+      } else { return ""};
   });
   return content;
 }
 
 function populatePersonInfo(person) {
-  console.log("-- populatePersonInfo: " + JSON.stringify(person));
-  console.log("-- personInfoElement_HTML: ");
+ // console.log("-- populatePersonInfo: " + JSON.stringify(person));
   //console.log(personInfoElement_HTML);
   //console.log(personInfoElement);
 
