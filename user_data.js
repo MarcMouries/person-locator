@@ -38,7 +38,7 @@ user_data = [
 		email: "Carlos.Chavez@example.com",
 		date_of_birth: "01/01/1960",
 		street: "3790 Camden Ave",
-		city: "Cincinnati",
+		city: "Cañon City",
 		state: "Colorado",
 		postal_code: "22101",
 		mobile_phone: "123-100-1003",
