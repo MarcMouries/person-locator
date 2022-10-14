@@ -12,6 +12,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1001",
 		office_phone: "123-100-2001",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Barbara",
@@ -26,6 +29,23 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1002",
 		office_phone: "123-100-2002",
+	},
+	{
+		first_name: "Carlos",
+		middle_name: "O",
+		last_name: "Chavez",
+		full_name: "Carlos Chavez",
+		email: "Carlos.Chavez@example.com",
+		date_of_birth: "01/01/1960",
+		street: "3790 Camden Ave",
+		city: "Cincinnati",
+		state: "Colorado",
+		postal_code: "22101",
+		mobile_phone: "123-100-1003",
+		office_phone: "123-100-2003",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Cindy",
