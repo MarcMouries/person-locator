@@ -176,3 +176,15 @@ ul.information-list .information-row:nth-child(even) {
 h2, .h2 {
     font-size: 16px;
 }
+
+.record_found_count {
+    display: flex;
+    gap: 1ch;
+    font-size: 16px;
+    color: #2e3f51;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 8px 0 20px 0;
+    text-align: center;
+}
+
