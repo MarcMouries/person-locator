@@ -173,3 +173,6 @@ ul.information-list .information-row:nth-child(even) {
 #record_found_count {
     display: none;
 }
+h2, .h2 {
+    font-size: 16px;
+}
