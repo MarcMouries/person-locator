@@ -167,6 +167,9 @@ ul.information-list .information-row:nth-child(even) {
     display: none;
 }
 
-#no_record_found {
+#record_found_count_template {
+    display: none;
+}
+#record_found_count {
     display: none;
 }

@@ -29,6 +29,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1002",
 		office_phone: "123-100-2002",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Carlos",
@@ -60,6 +63,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1003",
 		office_phone: "123-100-2003",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "David",
@@ -74,6 +80,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1004",
 		office_phone: "123-100-2004",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Edgar",
@@ -88,6 +97,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1005",
 		office_phone: "123-100-2005",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Frank",
@@ -102,6 +114,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1006",
 		office_phone: "123-100-2006",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Grace",
@@ -116,6 +131,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1007",
 		office_phone: "123-100-2007",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Jerry Jordan"
 	},
 	{
 		first_name: "Henri",

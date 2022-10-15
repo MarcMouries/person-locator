@@ -1,45 +1,57 @@
 var searchInputElement = document.getElementById("searchInput");
-var resultsElement = document.getElementById("searchResults");
-var recordFoundElement = document.getElementById("record_found");
+
+var person_infoElement = document.getElementById("person_info");
+var record_found_countElement = document.getElementById("record_found_count");
+
+var record_found_count_template_Element = document.getElementById("record_found_count_template");
 var personInfoTemplateElement = document.getElementById("person_info_template");
-var personInfoTemplate = personInfoTemplateElement.innerHTML;
 
 var inputValue = "";
 
-
-
 searchInputElement.addEventListener("input", function (e) {
   inputValue = e.target.value.toLowerCase();
-  console.log("searching for: " + inputValue);
-  // clear the result
-  while (resultsElement.hasChildNodes()) {
-    resultsElement.removeChild(resultsElement.firstChild);
+
+  if (!inputValue) {
+    console.log("search is empty");
+    person_infoElement.style.display = "none";
+    record_found_countElement.style.display = "none";
+    return;
   }
 
-  filteredData = user_data.filter(function (person) {
-//    return person.full_name.toLowerCase().includes(inputValue);
-    return person.full_name.toLowerCase().startsWith(inputValue);
-  });
+  if (inputValue) {
+    console.log("searching for: " + inputValue);
+    // clear the result
+    while (person_infoElement.hasChildNodes()) {
+      person_infoElement.removeChild(person_infoElement.firstChild);
+    }
 
-// console.log("RESULT FOUND: " + JSON.stringify(filteredData));
-  
-  var result_count = filteredData.length;
-  console.log("RESULT(S) FOUND: " + result_count);
+    // search
+    filteredData = user_data.filter(function (person) {
+      return person.full_name.toLowerCase().startsWith(inputValue);
+    });
+
+    // console.log("RESULT FOUND: " + JSON.stringify(filteredData));
+    var result_count = filteredData.length;
+    console.log("RESULT(S) FOUND: " + result_count);
 
 
-  if (filteredData.length == 0) {
-    console.log("NO RESULT FOUND: " + filteredData);
-    recordFoundElement.style.display = "block";
-    resultsElement.style.display = "none";
-  } else {
-    //recordFoundElement.style.display = "none";
+    // Fill the record_found_count template
+    var record_count = { "result_count": result_count };
+    var recordFoundHTML = populate(record_found_count_template_Element.innerHTML, record_count);
+    record_found_countElement.innerHTML = recordFoundHTML;
 
+    // Fill the person_info template
+    if (filteredData.length == 0) {
+      person_infoElement.style.display = "none";
+    } else {
       // we retrieve only the first person matching the search input
       var person = filteredData[0];
-      populatePersonInfo(person);
-
-      resultsElement.style.display = "block";
+      var personHTML = populate(personInfoTemplateElement.innerHTML, person);
+      person_infoElement.innerHTML = personHTML;
     }
+    person_infoElement.style.display = "block";
+    record_found_countElement.style.display = "block";
+  }
 });
 
 /* Populate template with data by replacing strings between braces with properties in the data object
@@ -47,41 +59,16 @@ searchInputElement.addEventListener("input", function (e) {
  * Returns an empty string if no value is found to match the string to be replaced
  */
 function populate(template, data) {
+  console.log("POPULATE: " );
+  console.log(template);
+  console.log(data);
   var content = template.replace(/\{(\w+)\}/g, function (_, k) {
     var value = data[k];
-    if (value) {
-       return value
-      } else { return ""};
+    if (value != undefined) {
+      return value
+    } else { return "" };
   });
   return content;
-}
-
-function populatePersonInfo(person) {
- // console.log("-- populatePersonInfo: " + JSON.stringify(person));
-  //console.log(personInfoElement_HTML);
-  //console.log(personInfoElement);
-
-  var div = document.createElement("div");
-  div.innerHTML = populate(personInfoTemplate, person);
-
-  resultsElement.appendChild(div);
-}
-
-// Function to create search result dom.
-function populateResult(result) {
-  var liElement, textNode;
-  var frag = document.createDocumentFragment();
-  result.forEach(function (person) {
-    liElement = document.createElement("li");
-    textNode = document.createTextNode(
-      person.name + "(age:" + person.age + ")");
-
-    liElement.appendChild(textNode);
-    // frag.appendChild(liElement);
-    var card_content = createCard(person);
-    personInfoElement.innerHTML = card_content;
-  });
-  resultsElement.appendChild(frag);
 }
 
 document.getElementById("searchInput").focus();
