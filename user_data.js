@@ -14,7 +14,7 @@ user_data = [
 		office_phone: "123-100-2001",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Barbara",
@@ -31,7 +31,7 @@ user_data = [
 		office_phone: "123-100-2002",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Carlos",
@@ -40,15 +40,15 @@ user_data = [
 		full_name: "Carlos Chavez",
 		email: "Carlos.Chavez@example.com",
 		date_of_birth: "01/01/1960",
-		street: "3790 Camden Ave",
+		street: "1016 College Ave",
 		city: "Cañon City",
 		state: "Colorado",
-		postal_code: "22101",
+		postal_code: "81212",
 		mobile_phone: "123-100-1003",
 		office_phone: "123-100-2003",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Cindy",
@@ -65,7 +65,7 @@ user_data = [
 		office_phone: "123-100-2003",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "David",
@@ -82,7 +82,7 @@ user_data = [
 		office_phone: "123-100-2004",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Edgar",
@@ -99,7 +99,7 @@ user_data = [
 		office_phone: "123-100-2005",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Frank",
@@ -116,7 +116,7 @@ user_data = [
 		office_phone: "123-100-2006",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Grace",
@@ -133,7 +133,7 @@ user_data = [
 		office_phone: "123-100-2007",
 		agency_name: "Agency.gov",
 		job_position: "Accountant",
-		manager: "Jerry Jordan"
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Henri",
@@ -148,6 +148,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1008",
 		office_phone: "123-100-2008",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Isabelle",
@@ -162,7 +165,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1009",
 		office_phone: "123-100-2009",
-	},
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"	},
 	{
 		first_name: "James",
 		middle_name: "O",
@@ -176,6 +181,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1010",
 		office_phone: "123-100-2010",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Kate",
@@ -190,6 +198,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1011",
 		office_phone: "123-100-2011",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Lucy",
@@ -204,6 +215,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1012",
 		office_phone: "123-100-2012",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Marc",
@@ -218,6 +232,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1013",
 		office_phone: "123-100-2013",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Natalie",
@@ -232,6 +249,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1014",
 		office_phone: "123-100-2014",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Oscar",
@@ -246,6 +266,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1015",
 		office_phone: "123-100-2015",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Paul",
@@ -260,6 +283,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1016",
 		office_phone: "123-100-2016",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Quincy",
@@ -274,6 +300,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1017",
 		office_phone: "123-100-2017",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Robert",
@@ -288,6 +317,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1018",
 		office_phone: "123-100-2018",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Susan",
@@ -302,6 +334,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1019",
 		office_phone: "123-100-2019",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Tracey",
@@ -316,6 +351,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1020",
 		office_phone: "123-100-2020",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Ursula",
@@ -330,6 +368,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1021",
 		office_phone: "123-100-2021",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Veronica",
@@ -344,6 +385,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1022",
 		office_phone: "123-100-2022",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "William",
@@ -358,6 +402,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1023",
 		office_phone: "123-100-2023",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Xavier",
@@ -372,6 +419,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1024",
 		office_phone: "123-100-2024",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 	{
 		first_name: "Yannick",
@@ -386,6 +436,9 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1025",
 		office_phone: "123-100-2025",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 
 	{
@@ -402,5 +455,8 @@ user_data = [
 		postal_code: "22101",
 		mobile_phone: "123-100-1026",
 		office_phone: "123-100-2026",
+		agency_name: "Agency.gov",
+		job_position: "Accountant",
+		manager: "Manfred Smith"
 	},
 ];
