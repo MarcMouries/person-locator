@@ -6,10 +6,9 @@ var record_found_countElement = document.getElementById("record_found_count");
 var record_found_count_template_Element = document.getElementById("record_found_count_template");
 var personInfoTemplateElement = document.getElementById("person_info_template");
 
-var inputValue = "";
 
 searchInputElement.addEventListener("input", function (e) {
-  inputValue = e.target.value.toLowerCase();
+  var inputValue = e.target.value;
 
   if (!inputValue) {
     console.log("search is empty");
@@ -27,7 +26,9 @@ searchInputElement.addEventListener("input", function (e) {
 
     // search
     filteredData = user_data.filter(function (person) {
-      return person.full_name.toLowerCase().startsWith(inputValue);
+      var valueToSearch = inputValue.toLowerCase();
+      var personName = person.full_name.toLowerCase();
+      return personName.startsWith(valueToSearch);
     });
 
     // console.log("RESULT FOUND: " + JSON.stringify(filteredData));
