@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <link type="text/css" href="./styles.css" media="all" rel="stylesheet" />
-    <title>Person Locator</title>
-  </head>
 
-  <body translate="no">
-    <div class="page-container">
-      <div class="container">
-        <div class="content-container">
-          <div class="form-header"></div>
-          <!-- form  header -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link type="text/css" href="./styles.css" media="all" rel="stylesheet" />
+  <title>Person Locator</title>
+</head>
 
-          <div class="form-container">
-            <h1>Person locator</h1>
-            <div class="form-content">
-              <h2>Find personel information quickly</h2>
-              <p>Ex. Search for Albert, Barbara or Marc.</p>
+<body translate="no">
+  <div class="page-container">
+    <div class="container">
+      <div class="content-container">
+        <div class="form-header"></div>
+        <!-- form  header -->
+
+        <div class="form-container">
+          <h1>Person locator</h1>
+          <div class="form-content">
+            <h2>Find personel information quickly</h2>
+            <p>Ex. Search for Albert, Barbara or Marc.</p>
+          </div>
+          <div>
+            <input id="searchInput" type="text" placeholder="Type a name" autocomplete="off" />
+
+            <!-- Will be filled with a populated template -->
+            <div id="record_found_count"></div>
+            <div id="person_info"></div>
+
+            <!-- TEMPLATES -->
+            <div id="record_found_count_template">
+              <div class="record_found_count">
+                <div>Record(s) found:</div>
+                <div id="result_count">{result_count}</div>
+              </div>
             </div>
-            <div>
-              <input id="searchInput" type="text" placeholder="Type a name" autocomplete="off" />
 
-              <!-- Will be filled with a populated template -->
-              <div id="record_found_count"></div>
-              <div id="person_info"></div>
+            <div id="person_info_template" class="form-fields">
+              <!-- SECTION -->
+              <section class="information" id="one">
+                <header class="information-title m_header">
+                  <div class="information-row-left">Personal information</div>
+                  <div class="information-row-right"></div>
+                </header>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left">First Name</div>
+                    <div class="information-row-right" id="first_name">{first_name}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">Middle Name</div>
+                    <div class="information-row-right" id="middle_name">{middle_name}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">Last Name</div>
+                    <div class="information-row-right" id="last_name">{last_name}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">Date of Birth</div>
+                    <div class="information-row-right" id="date_of_birth">{date_of_birth}</div>
+                  </li>
+                </ul>
+              </section>
 
-              <!-- TEMPLATES -->
-              <div id="record_found_count_template">
-                <div  class="record_found_count">
-                  <div>Record(s) found:</div>
-                  <div id="result_count">{result_count}</div> 
-                </div>
-              </div>
+              <!-- SECTION -->
+              <section class="information" id="work_information">
+                <header class="information-title m_header">
+                  <div class="information-row-left">Work information</div>
+                  <div class="information-row-right"></div>
+                </header>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left">Agency</div>
+                    <div class="information-row-right" id="agency_name">{agency_name}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">Job Position</div>
+                    <div class="information-row-right" id="job_position">{job_position}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">Manager</div>
+                    <div class="information-row-right" id="manager">{manager}</div>
+                  </li>
+                </ul>
+              </section>
 
-              <div id="person_info_template" class="form-fields">
-                <!-- SECTION -->
-                <section class="information" id="one">
-                  <header class="information-title m_header">
-                    <div class="information-row-left">Personal information</div>
-                    <div class="information-row-right"></div>
-                  </header>
-                  <ul class="information-list">
-                    <li class="information-row">
-                      <div class="information-row-left">First Name</div>
-                      <div class="information-row-right" id="first_name">{first_name}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">Middle Name</div>
-                      <div class="information-row-right" id="middle_name">{middle_name}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">Last Name</div>
-                      <div class="information-row-right" id="last_name">{last_name}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">Date of Birth</div>
-                      <div class="information-row-right" id="date_of_birth">{date_of_birth}</div>
-                    </li>
-                  </ul>
-                </section>
-
-                <!-- SECTION -->
-                <section class="information" id="work_information">
-                  <header class="information-title m_header">
-                    <div class="information-row-left">Work information</div>
-                    <div class="information-row-right"></div>
-                  </header>
-                  <ul class="information-list">
-                    <li class="information-row">
-                      <div class="information-row-left">Agency</div>
-                      <div class="information-row-right" id="agency_name">{agency_name}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">Job Position</div>
-                      <div class="information-row-right" id="job_position">{job_position}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">Manager</div>
-                      <div class="information-row-right" id="manager">{manager}</div>
-                    </li>
-                  </ul>
-                </section>
-
-                <!-- SECTION -->
-                <section class="information" id="two">
-                  <header class="information-title m_header">
-                    <div class="information-row-left" scope="row">Home address</div>
-                    <div class="information-row-right"></div>
-                  </header>
-                  <ul class="information-list">
-                    <li class="information-row">
-                      <div class="information-row-left">Street</div>
-                      <div class="information-row-right" id="street">{street}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">City</div>
-                      <div class="information-row-right" id="city">{city}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">State</div>
-                      <div class="information-row-right" id="state">{state}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left">Zip Code</div>
-                      <div class="information-row-right" id="postal_code">{postal_code}</div>
-                    </li>
-                  </ul>
-                </section>
-                <section class="information">
-                  <header class="information-title m_header">
-                    <div class="information-row-left" scope="row">Phone number</div>
-                    <div class="information-row-right"></div>
-                  </header>
-                  <ul class="information-list">
-                    <li class="information-row">
-                      <div class="information-row-left" scope="row">Mobile Phone</div>
-                      <div class="information-row-right" id="mobile_phone">{mobile_phone}</div>
-                    </li>
-                    <li class="information-row">
-                      <div class="information-row-left" scope="row">Office Phone</div>
-                      <div class="information-row-right" id="office_phone">{office_phone}</div>
-                    </li>
-                  </ul>
-                </section>
-              </div>
+              <!-- SECTION -->
+              <section class="information" id="two">
+                <header class="information-title m_header">
+                  <div class="information-row-left" scope="row">Home address</div>
+                  <div class="information-row-right"></div>
+                </header>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left">Street</div>
+                    <div class="information-row-right" id="street">{street}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">City</div>
+                    <div class="information-row-right" id="city">{city}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">State</div>
+                    <div class="information-row-right" id="state">{state}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left">Zip Code</div>
+                    <div class="information-row-right" id="postal_code">{postal_code}</div>
+                  </li>
+                </ul>
+              </section>
+              <section class="information">
+                <header class="information-title m_header">
+                  <div class="information-row-left" scope="row">Contact information</div>
+                  <div class="information-row-right"></div>
+                </header>
+                <ul class="information-list">
+                  <li class="information-row">
+                    <div class="information-row-left" scope="row">Email</div>
+                    <div class="information-row-right" id="email">{email}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left" scope="row">Mobile Phone</div>
+                    <div class="information-row-right" id="mobile_phone">{mobile_phone}</div>
+                  </li>
+                  <li class="information-row">
+                    <div class="information-row-left" scope="row">Office Phone</div>
+                    <div class="information-row-right" id="office_phone">{office_phone}</div>
+                  </li>
+                </ul>
+              </section>
             </div>
           </div>
         </div>
-        <!-- content container-->
       </div>
+      <!-- content container-->
     </div>
-    <!-- page container-->
-    <script src="./user_data.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  <!-- page container-->
+  <script src="./user_data.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
