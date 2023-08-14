@@ -1,3 +1,19 @@
+
+console.log("LOADING SCRIPT: Person Locator" );
+
+var user_data = [];
+
+var FILE_NAME = './users.json';
+// Fetch the JSON data when the page loads
+fetch(FILE_NAME)
+    .then(response => response.json())
+    .then(data => {
+        user_data = data;
+    })
+    .catch(error => {
+        console.error('Error fetching user_data.json:', error);
+    });
+
 var searchInputElement = document.getElementById("searchInput");
 
 var person_infoElement = document.getElementById("person_info");
@@ -6,6 +22,7 @@ var record_found_countElement = document.getElementById("record_found_count");
 var record_found_count_template_Element = document.getElementById("record_found_count_template");
 var personInfoTemplateElement = document.getElementById("person_info_template");
 
+searchInputElement.focus();
 
 searchInputElement.addEventListener("input", function (e) {
   var inputValue = e.target.value;
@@ -61,7 +78,7 @@ searchInputElement.addEventListener("input", function (e) {
  */
 function populate(template, data) {
   console.log("POPULATE: " );
-  console.log(template);
+  //console.log(template);
   console.log(data);
   var content = template.replace(/\{(\w+)\}/g, function (_, k) {
     var value = data[k];
@@ -72,4 +89,3 @@ function populate(template, data) {
   return content;
 }
 
-document.getElementById("searchInput").focus();
